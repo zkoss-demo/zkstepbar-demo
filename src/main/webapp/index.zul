@@ -1,0 +1,19 @@
+<zk>
+    <stepbar id="stepbar" onChange="desc.setValue(self.activeStep.title)">
+        <step title="Aperitif"/>
+        <step title="Appetizer"/>
+        <step title="Soup"/>
+        <step title="Salad"/>
+        <step title="Main course"/>
+        <step title="Dessert, Beverage"/>
+    </stepbar>
+    <separator/>
+    <div>Current Menu:
+        <label id="desc" value="Aperitif"/>
+    </div>
+    <separator/>
+    <hlayout>
+        <button label="Back" onClick="stepbar.back()"/>
+        <button label="Next" onClick="stepbar.next()"/>
+    </hlayout>
+</zk>
